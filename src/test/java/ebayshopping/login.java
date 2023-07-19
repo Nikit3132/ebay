@@ -15,6 +15,7 @@ public class login {
 		Thread.sleep(1000);
 		driver.findElement(By.name("_nkw")).sendKeys("mobile");
 		
+		driver.close();
 		
 	}
 
