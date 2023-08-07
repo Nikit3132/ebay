@@ -13,10 +13,14 @@ public class login {
 		
 		driver.get("https://www.ebay.com/");
 		Thread.sleep(1000);
+		driver.manage().window().maximize();
 		driver.findElement(By.name("_nkw")).sendKeys("mobile");
+		Thread.sleep(2000);
+	
+		driver.findElement(By.id("gh-btn")).click();
 		
-		driver.close();
-		
+		//driver.close();
+		  
 	}
 
 }
